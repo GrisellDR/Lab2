@@ -39,6 +39,7 @@ data(sleepstudy)
 lmer(Reaction ~ Days + (Days | Subject), sleepstudy)
 
 
+
 ###################################################################
 ### A simple example: simulation
 
