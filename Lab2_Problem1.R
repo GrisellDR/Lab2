@@ -4,11 +4,18 @@
 ## you anticipate larger error due to heterogeneity of the new sample, that is, ϵij∼N(0,30^2)
 ## you anticipate random intercept and random slope to be independent, that is, cor(b0,i,b1,i)=0
 
+# Code Review by Elise Chen on 04/17/2024
+# Comments: 1. could not find function mvrnorm
+#           2. could not find function lmer
+#           3. could not compile the code 
+
 
 
 ###################################################################
 ### Problem 1
 
+library(MASS) ### Elise added
+library(lme4) ### Elise added
 # We keep sample size 40
 p.matrix = c()
 for (N in 40) { #gdr change: 40 instead of seq(5,40,by=5)
